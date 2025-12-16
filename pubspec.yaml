@@ -1,0 +1,32 @@
+name: projetblockchain
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  provider: ^6.0.5
+  web3dart: ^2.7.3
+  http: ^1.2.2
+  web_socket_channel: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+
+flutter:
+  uses-material-design: true
+  # Ajout de l'ABI généré par Truffle
+  assets:
+    - src/artifacts/HelloWorld.json
+
